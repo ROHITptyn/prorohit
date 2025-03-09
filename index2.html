@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online voting </title>
+    <link rel="stylesheet" href="style2.css">
+    
+</head>
+<body>
+    <h1>vote for candidate </h1>
+    <h2>Collage of President</h2>
+    <button one click = "Vote ('Alice')">Vote Alice</button>
+    <button oneclick =" Vote ('bob')"> Vote Bob</button>
+       <h1>Make a difference with online voting!</h1>
+        <h1>The power of online voting is at your fingertips!
+            <p> Online voting made simple!
+            Your Vote, Your Schedule</p>
+            <p> Trust the online voting system!</p>
+             <p>Online voting with utmost security! Accuracy Guaranteed_</p>
+             <h2>Go to the Registration login page and vote for your candidate</h2>
+    </h1>
+    <h2>Results</h2>
+     
+    <pre id = "Results"></pre>
+
+    <script>
+         function vote(candidate){
+            fetch('/vote' ,
+                method   
+                //headers :arguments
+             ,{'content type ': ' application/jons'},
+                       
+             JSON.stringify({ condidate : condidate})
+            ).then (Response =>
+                Response.JSON())
+                     .then (data =>
+                        document. getElementById('results').innerText= JSON.stringify(data ,null,2)
+        );
+                      }
+                       function getResults(){
+                        fetch('/results ')
+                            .then(Response =>
+                               Response.JSON()) 
+                                      .then(data =>
+                                        document.getElementById('results').innerText = JSON.stringify(data, null, 2 ));
+                                        
+                       }    
+                       getResults();
+
+
+                    
+          
+        
+    </script>
+</body>
+</html>

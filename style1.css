@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&text=Hello');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa&text' sans-serif;
+}
+
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg,#a89393,#2c6b9c);
+  }
+  .Login{
+    position: relative;
+    height: 100%;
+  }
+  .container{
+    position: relative;
+    width: 850px;
+    height: 550px;
+    background: #ffff;
+    border-radius: 30px;
+    box-shadow:  0  0  30px  rgb(53, 50, 50);
+}
+.form-box{
+   position: absolute;
+   right: 0;
+   width: 50%;
+   height: 100%;
+   background: slategray;
+   display: flex;
+   align-items: center;
+   color: rgb(248, 248, 248);
+   text-align: center;
+   padding: 40px;
+   z-index: 1;
+}
+form {
+     width: 100%;
+}
+.container h1 {
+    font-size: 36px;
+    margin: -10px 0;
+}
+.input-box{
+    position: relative;
+    margin: 30px;
+}
+
+ .input-box input{
+    width: 100%;
+    padding: 13px;
+    background: #dfc6c6;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+ }
+ .forgot-link{
+    margin: -15px 0 15px;
+ }
+ .btn{
+    width: 60%;
+    height: 30%;
+    background: #55649a;
+    border-radius: 9px;
+    box-shadow: #9fc748;
+    cursor: pointer;
+    font-size: 16px;
+    color: #01020d;
+    font-weight: 600;
+ }
+ .container p{
+    font-size: 14.4px;
+    margin: 15px;
+ }
+ .socila-icon a{
+    display: inline-flex;
+    padding: 10px;
+    border: 2px solid #3a4c95;
+    border-radius: 8px;
+    font-size: 24px;
+    color: #0c0c1d;
+    text-decoration: none;
+    margin: 0 8px;
+ }
+  .toggle-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+ }
+  
+  .toggle-panel{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: #e8e9f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+ }
+  .toggle-panel p{
+    margin-bottom: 20px;
+  }
+  .toggle-panel .btn{
+    width: 160px;
+    height: 46px;
+    background: transparent;
+    border: 2px solid #894545;
+    box-shadow: #4343a3;
+  }
+ .index2.html{
+    position: absolute;
+    width: 60%;
+    height: 30%;
+    background: #414a67;
+    border-radius: 9px;
+    box-shadow: #a5bb76;
+    cursor: pointer;
+    font-size: 16px;
+    color: #01020d;
+    font-weight: 600;
+
+}
